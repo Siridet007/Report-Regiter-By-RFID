@@ -18,6 +18,7 @@ class ListRegister {
   String? company;
   String? doctime;
   String? doctime1;
+  String? deptname;
 
   ListRegister(
       {this.personId,
@@ -38,7 +39,8 @@ class ListRegister {
       this.serviceName,
       this.company,
       this.doctime,
-      this.doctime1});
+      this.doctime1,
+      this.deptname});
 
   ListRegister.fromJson(Map<String, dynamic> json) {
     personId = json['person_id'];
@@ -60,6 +62,7 @@ class ListRegister {
     company = json['company'];
     doctime = json['doctime'];
     doctime1 = json['doctime1'];
+    deptname = json['deptname'];
   }
 
   Map<String, dynamic> toJson() {
@@ -83,6 +86,7 @@ class ListRegister {
     data['company'] = this.company;
     data['doctime'] = this.doctime;
     data['doctime1'] = this.doctime1;
+    data['deptname'] = this.deptname;
     return data;
   }
 
