@@ -210,17 +210,19 @@ class _FirstPageState extends State<FirstPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('${list1![index].code}',
-                style: const TextStyle(fontFamily: 'cm', fontSize: 25)),
+                style: const TextStyle(fontFamily: 'cm', fontSize: 20)),
             Text('${list1![index].name}',
-                style: const TextStyle(fontFamily: 'pg', fontSize: 25)),
+                style: const TextStyle(fontFamily: 'pg', fontSize: 20)),
+            Text('${list1![index].deptname}',
+                style: const TextStyle(fontFamily: 'pg', fontSize: 20)),
             Container(
               child: Row(
                 children: [
                   Text(time1,
-                      style: const TextStyle(fontFamily: 'cm', fontSize: 25)),
+                      style: const TextStyle(fontFamily: 'cm', fontSize: 20)),
                   const Padding(padding: EdgeInsets.only(left: 10)),
                   Text(time2,
-                      style: const TextStyle(fontFamily: 'cm', fontSize: 25)),
+                      style: const TextStyle(fontFamily: 'cm', fontSize: 20)),
                 ],
               ),
             ),
